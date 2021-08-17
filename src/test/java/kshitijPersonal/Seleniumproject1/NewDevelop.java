@@ -8,6 +8,7 @@ public class NewDevelop {
 	@Test
 	public void medthod()
 	{
+		System.out.println("hello world");
 		
 	}
 }
