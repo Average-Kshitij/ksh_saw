@@ -253,7 +253,7 @@ public class MarkTestComplete extends Initialise{
 
 				WebElement chooseFileButton = getDriver()
 						.findElement(By.xpath("//input[@name='repo_upload_file' and @type='file']"));
-				chooseFileButton.sendKeys("C:\\Users\\MY PC\\Desktop\\ASSIGNMENT.docx");
+				chooseFileButton.sendKeys(System.getProperty("user.dir")+"\\ASSIGNMENT.docx");
 
 				//System.out.println("==========KKKKKKKKKKKKKKKKKKK=========================");
 				

@@ -21,7 +21,7 @@ public class Initialise {
 
 	public static void setup()
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\My Files\\Selenium pre-reqs\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver.exe");
 		driver = new ChromeDriver();	
 		driver.manage().window().maximize();
 	}
