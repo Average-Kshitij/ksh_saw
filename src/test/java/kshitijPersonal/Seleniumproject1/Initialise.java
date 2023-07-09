@@ -2,19 +2,35 @@ package kshitijPersonal.Seleniumproject1;
 
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.*;
 
 public class Initialise {
 	
+	private static WebDriver driver;
 	
-	@Test
-	public void setup()
+
+
+	 public static WebDriver getDriver() {
+		return driver;
+	}
+
+
+
+	public static void setup()
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\My Files\\Selenium pre-reqs\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.spicejet.com/");
+		driver = new ChromeDriver();	
 		driver.manage().window().maximize();
 	}
+
+	public void getURL(String URL)
+	{
+		getDriver().get(URL);
+	}
+
+	
 	
 }

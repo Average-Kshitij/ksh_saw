@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="kshitijPersonal.Seleniumproject1.Initialise"/>
+      <class name="kshitijPersonal.Seleniumproject1.MarkTestComplete"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
